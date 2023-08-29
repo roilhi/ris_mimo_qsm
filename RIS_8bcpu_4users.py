@@ -1,13 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from comm_utilities import qam_symbol_generator, qam_mimo_tx_combinations, biterr_calculation
+from comm_utilities import *
 from scipy.linalg import svd
 
 pot=0
 Nr=2 #Antenas por usuario
 Nt=8 # Tx en la Estacion Base
 Nrel=16 # Número de espejos en el RIS( mayor que 8)
-SNR_dB = np.arange(start=0,stop=22,step=2) #start=0, stop = 20, step = 2 vector SNR de ruido en dB
+SNR_dB = np.arange(start=0,stop=32,step=2) #start=0, stop = 20, step = 2 vector SNR de ruido en dB
 SNR_l = 10**(SNR_dB/10) # snr lineal
 be = 0
 #BER = np.zeros((1,len(SNR_dB)))
@@ -46,7 +46,7 @@ P_t = 0
 len_data = int(len(SS))
 bcpu = int(np.log2(len_data))
 cst_ch = 1/np.sqrt(2)
-n_iter = 10**4
+n_iter = 10**5
 P = 10
 At = np.sqrt(P)
 #for j in range(len(SNR_l)):

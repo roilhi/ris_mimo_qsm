@@ -1,12 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from comm_utilities import qam_symbol_generator, qam_mimo_tx_combinations, biterr_calculation, H_channel, awgn_noise
+from comm_utilities import *
 from scipy.linalg import svd
 
 Nr = 2 # Rx antennas/user
 Nt = 8 # NTx base station
 N_rel = 8 # Number of RIS elements
-N_iter = 10**3
+N_iter = 10**4
 SNR_dB = np.arange(start=0, stop=32, step=2)
 SNR_l = 10**(SNR_dB/10)
 be = 0
