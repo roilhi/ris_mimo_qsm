@@ -77,7 +77,12 @@ def qam_mimo_tx_combinations(Nt, qam_constellation_array):
 
 def eqsm_constellation(M,qam_sym,Nt,K):
     '''
-    Creates an extended QSM constellation (EQSM) based on QAM symbols. 
+    This code is based on the E-QSM modulation algorithm described in the paper:
+    Castillo-Soria, F. R., Cortez, J., Gutiérrez, C. A., Luna-Rivera, M., & Garcia-Barrientos, A. (2019). 
+    Extended quadrature spatial modulation for MIMO wireless communications. 
+    Physical Communication, 32, 88-95.
+
+    The output is an extended QSM constellation (EQSM) based on QAM symbols. 
     Each ak sequence is modulated by QSM, then sequences are combined
     Inputs:
             M --> QAM modulation order
