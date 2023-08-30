@@ -21,6 +21,13 @@ $$G_n \in \mathbb{C}^{N_s \times N_t}$$
 
 El modelo de canal se define como cuasi-estático, el desvanecimiento correlacionado con una distribución Rayleigh, donde suponemos que sus elementos son variables aleatorias gaussianas complejas con media cero y varianza unitaria $\mathcal{C}\mathcal{N}(0,1)$.
 
+## Descripción de las rutinas de código
+* NORIS_BD_Blind8bcpu_ref.py: Se cacula la curva de la tasa de error de bit promedio (ABEP), empleando $N_t=8$ antenas transmisoras, $N_r=2$ antenas receptoras, sin superficies RIS y modulación 16-QAM
+* NO_RIS_EQSM_8bcpu_4users.py: Se cacula la curva de la tasa de error de bit promedio (ABEP), empleando $N_t=8$ antenas transmisoras, $N_r=2$ antenas receptoras, sin superficies RIS y modulación QSM extendida (EQSM)
+* ONE_RIS_QAM_8bcpu_4users.py: Se cacula la curva de la tasa de error de bit promedio (ABEP), empleando $N_t=8$ antenas transmisoras, $N_r=2$ antenas receptoras, $N=1$ superficies RIS y modulación 16-QAM
+* ONE_IntelligentRIS_QAM_8bcpu_4users.py: Se cacula la curva de la tasa de error de bit promedio (ABEP), empleando $N_t=8$ antenas transmisoras, $N_r=2$ antenas receptoras, $N=1$ superficies RIS y modulación 16-QAM. Por medio de un algoritmo genético se logra mejorar el comportamiento del ABEP al optimizar la fase de la señal retransmitida
+
+
 
 ## Referencias
 <a id="1">[1]</a> 
