@@ -15,7 +15,7 @@ En el caso de los canales inalámbricos de transmisión, se definen los siguient
 * La matriz de canal enre la estación base y el $k$-ésimo usuario de los $K$ disponibles ($k \in K$):
 $$\mathbf{H}_{n,k}^{DP} \in \mathbb{C}^{Nt \times N_r}$$
 * La matriz de canal entre la $n$-ésima superficie RIS de las $N$ disponibles ($n \in N$) y el $k$-ésimo usuario:
-$$\mathbf{H_n,k} \in \mathbb{C}^{N_r \times N_s}$$
+$$\mathbf{H_{n,k}} \in \mathbb{C}^{N_r \times N_s}$$
 * La matriz de canal entre la estación base y la $n$-ésima superficie RIS:
 $$G_n \in \mathbb{C}^{N_s \times N_t}$$
 
