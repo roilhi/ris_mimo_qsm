@@ -9,7 +9,7 @@ Las librerías necesarias para ejecutar el código de las simulaciones son las s
 Para instalarlas de manera automática, se puede ejecutar el comando  `pip install -r requirements.txt`
 ## Descripción del sistema
 La estación base comprende $N_t$ antenas transmisoras, $K$ usuarios o estaciones móviles con $N_r$ antenas receptoras. 
-Cada sistema usa $N$ superfices RIS para reflejar la señal y cada RIS emplea $N_s$ espejos reflectores.
+Cada sistema usa $N$ superficies RIS para reflejar la señal y cada RIS emplea $N_s$ espejos reflectores.
 En el caso de los canales inalámbricos de transmisión, se definen los siguientes:
 
 * La matriz de canal enre la estación base y el $k$-ésimo usuario de los $K$ disponibles ($k \in K$):
